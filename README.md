@@ -47,7 +47,7 @@ Backbase-TestingFramework/
         <li>|--java</li>
             <ul>
               <li><a href="https://github.com/aisabel/SuitSupply/tree/master/SuitSupply/src/test/java/featureFiles">|--featureFiles</a> = Cucumber feature files</li>
-              <ul><li><a href="https://github.com/aisabel/SuitSupply/blob/master/SuitSupply/src/test/java/stepDefinitions/RunTest.java">RunTest.class</a> = Specified Runner class to use as pluggin</a></li></ul>
+              <ul><li><a href="https://github.com/aisabel/SuitSupply/blob/master/SuitSupply/src/test/java/stepDefinitions/RunTest.java">RunTest.class</a> = Specified Runner class to use as pluggin</a></li>
               <li><a href="https://github.com/aisabel/SuitSupply/tree/master/SuitSupply/src/test/java/stepDefinitions">|--stepDefinitions</a> = Defined class methods</li>
             </ul>
       </ul>
