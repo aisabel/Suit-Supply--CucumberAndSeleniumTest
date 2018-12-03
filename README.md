@@ -7,7 +7,7 @@
 
 <h2>TestFramework Description:</h2>
 <p align="justified">This test suite was designed to meet business requirements by implementing a combination of automated test cases that can be executed also manually for a product type from custom made page.</br>
-Regardling automation: Cucumber framework has been selected by their capability to display human readable instructions in the tests (gherking language); combined with Selenium to easy locate elements, using JUnit for assertion results. This test suite is configured to be continuosly integrated in <a href="https://travis-ci.org/aisabel/suitSupply">Travis</a> for a fast pace development environment.</p>
+Regardling automation: Cucumber framework has been selected by their capability to display human readable instructions in the tests (gherking language); combined with Selenium to easy locate elements, using JUnit for assertion results.</p>
 
 <h2>Specifications, Frameworks and IDE tools:</h2>
 <ul><li>IDE:<a href="https://www.jetbrains.com/idea/download/#section=windows"> *IntelijIDEA 15.0.1</a></li></ul>
