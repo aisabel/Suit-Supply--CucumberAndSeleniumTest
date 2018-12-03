@@ -1,5 +1,4 @@
 # Custom-made--TestingFramework
-[![Build Status](https://travis-ci.org/aisabel/Custom-made--TestingFramework.svg?branch=master)](https://travis-ci.org/aisabel/Custom-made--TestingFramework.svg?branch=master)
 
 <h2>Business Requirement:</h2>
 <p align="justified">Design automated/manual testcases for any product type (Suit), as well as prepare atuomation test withing any suggestion to add/change on any custom made product type.</br>								
