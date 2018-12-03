@@ -7,7 +7,7 @@
 
 <h2>TestFramework Description:</h2>
 <p align="justified">This test suite was designed to meet business requirements by implementing a combination of automated test cases that can be executed also manually for a product type from custom made page.</br>
-Regardling automation: Cucumber framework has been selected by their capability to display human readable instructions in the tests (gherking language); combined with Selenium to easy locate elements in a powerful faster headless browser, using JUnit for assertion results; getting as a result an automated report.  This test suite is configured to be continuosly integrated in <a href="https://travis-ci.org/aisabel/suitSupply">Travis</a> for a fast pace development environment.</p>
+Regardling automation: Cucumber framework has been selected by their capability to display human readable instructions in the tests (gherking language); combined with Selenium to easy locate elements, using JUnit for assertion results. This test suite is configured to be continuosly integrated in <a href="https://travis-ci.org/aisabel/suitSupply">Travis</a> for a fast pace development environment.</p>
 
 <h2>Specifications, Frameworks and IDE tools:</h2>
 <ul><li>IDE:<a href="https://www.jetbrains.com/idea/download/#section=windows"> *IntelijIDEA 15.0.1</a></li></ul>
@@ -48,7 +48,7 @@ Backbase-TestingFramework/
             <ul>
               <li><a href="https://github.com/aisabel/SuitSupply/tree/master/SuitSupply/src/test/java/featureFiles">|--featureFiles</a> = Cucumber feature files</li></ul>
               <ul><li><a href="https://github.com/aisabel/SuitSupply/blob/master/SuitSupply/src/test/java/stepDefinitions/RunTest.java">RunTest.class</a> = Specified Runner class to use as pluggin</a></li></ul>
-              <li><a href="https://github.com/aisabel/SuitSupply/tree/master/SuitSupply/src/test/java/stepDefinitions">|--stepDefinitions</a> = Defined class methods</li></ul>
+              <ul><li><a href="https://github.com/aisabel/SuitSupply/tree/master/SuitSupply/src/test/java/stepDefinitions">|--stepDefinitions</a> = Defined class methods</li></ul>
             </ul>
       </ul>
     </ul>
