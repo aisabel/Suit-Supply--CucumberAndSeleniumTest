@@ -78,4 +78,3 @@ SuitSupply/
   <li><a href="http://docs.seleniumhq.org/projects/webdriver/">Selenium reference page</a></li>
   <li><a href="https://cucumber.io">Cucumber reference page</a></li>
 </ul>
-
