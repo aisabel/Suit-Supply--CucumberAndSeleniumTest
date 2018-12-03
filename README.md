@@ -14,13 +14,11 @@ Regardling automation: Cucumber framework has been selected by their capability 
 <ul><li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"> *Java with package (JDK 1.8)</a>Baseline Programming Language</li></ul>
 <ul><li>Chrome webdriver.exe</li></ul>
 <ul>Main Frameworks:
-  <li><a href="https://mvnrepository.com/artifact/info.cukes/cucumber-java>*Cucumber framework 1.2.5</a></li>
-  <li><a href="http://selenium-release.storage.googleapis.com/3.7/selenium-java-3.7.1.zip">*Selenium for java 3.7.1</a></li>
+  <li><a href="https://mvnrepository.com/artifact/info.cukes/cucumber-java>*Cucumber framework 3.0.1</a></li>
+  <li><a href="http://selenium-release.storage.googleapis.com/3.9.1/selenium-java-3.9.1.zip">*Selenium for java 3.9.1</a></li>
   <li><a href="https://mvnrepository.com/artifact/junit/junit">*JUnit 4.11 </a></li>
   <li><a href="https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin">*Maven compiler 3.7.0</a></li>
 </ul>
-<p>Other dependencies used:
-    <ul><li>Cucumber-java8 1.2.5, Cucumber-jvm 1.2.5, Cucumber-jUnit 1.2.5, Cucumber picontainer 1.2.5, Selenium-server 3.7.1, selenium-htmlunit-driver, log4j 1.2.17</li></ul>
     
 <p>Note: Maven project will download automatically those framework external libraries based upon the dependencies in pom.xml file. But if in any case you need to go back directly to the source and install manually, each one of the links above leads you to the repositories.</p>
 
