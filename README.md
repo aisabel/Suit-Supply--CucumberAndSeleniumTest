@@ -5,7 +5,7 @@
 </p>
 
 <h2>TestFramework Description:</h2>
-<p align="justified">This test suite was designed to meet business requirements by implementing a combination of automated test cases that can be executed also manually for a product type from custom made page.</br>
+<p align="justified">This test suite was designed to meet business requirements by implementing a combination of automated test cases that can be executed also manually for a product type from custom made page.</br> All the possible combinations for the coverage of the custom made product are defined in the xls excel document attached.
 Regardling automation: Cucumber framework has been selected by their capability to display human readable instructions in the tests (gherking language); combined with Selenium to easy locate elements, using JUnit for assertion results.</p>
 
 <h2>Specifications, Frameworks and IDE tools:</h2>
