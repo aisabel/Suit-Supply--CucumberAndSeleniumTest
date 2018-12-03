@@ -25,12 +25,9 @@ Regardling automation: Cucumber framework has been selected by their capability 
 <h2>TestingFramework Structure:</h2>
 In order to provide a clear functional framework, the structure has been settup as below:
 
-Backbase-TestingFramework/
+SuitSupply/
 <ul>|--lib</ul>
 <ul>|--output</ul>
-  <ul>
-    <li>-index.html = Autmoated generated report</a></li>
-  </ul>
 </ul>
 <ul>|--src
   <ul>
