@@ -31,7 +31,7 @@ Backbase-TestingFramework/
 <ul>|--lib</ul>
 <ul>|--output</ul>
   <ul>
-    <li>|<a href="https://github.com/aisabel/SuitSupply/tree/master/SuitSupply/output">-index.html</a> = Autmoated generated report</a></li>
+    <li>-index.html = Autmoated generated report</a></li>
   </ul>
 </ul>
 <ul>|--src
@@ -48,7 +48,6 @@ Backbase-TestingFramework/
             <ul>
               <li><a href="https://github.com/aisabel/SuitSupply/tree/master/SuitSupply/src/test/java/featureFiles">|--featureFiles</a> = Cucumber feature files</li>
               <ul><li><a href="https://github.com/aisabel/SuitSupply/blob/master/SuitSupply/src/test/java/stepDefinitions/RunTest.java">RunTest.class</a> = Specified Runner class to use as pluggin</a></li></ul>
-              <li><a href="https://github.com/aisabel/SuitSupply/tree/master/SuitSupply/src/test/java/pageObjects">|--pageObjects</a> = Page Object Pattern class</li>
               <li><a href="https://github.com/aisabel/SuitSupply/tree/master/SuitSupply/src/test/java/stepDefinitions">|--stepDefinitions</a> = Defined class methods</li>
             </ul>
       </ul>
@@ -60,9 +59,9 @@ Backbase-TestingFramework/
   <li>|--generated-test-resources</li>
   <li>|--test-clases</li>
 </ul>
-<ul><li><a href="https://github.com/aisabel/SuitSupply/blob/master/Backbase-TestingFramework/target/cucumber-report.json">|--cucumber-report.json</a></li></ul>
-<ul><li>Backbase-TestingFramework.iml</li></ul>
-<ul><li><a href="https://github.com/aisabel/SuitSupply/blob/master/Backbase-TestingFramework/pom.xml">pom.xml</a> = Maven dependency file to load required libraries</li></ul>
+<ul><li>|--cucumber-report.json</li></ul>
+<ul><li>SuitSupply.iml</li></ul>
+<ul><li>pom.xml Maven dependency file to load required libraries</li></ul>
 <ul><li>Manual tests</li></ul>
 <ul><li>.travis.yml = Configuration file to run in CI</li></ul>
 
