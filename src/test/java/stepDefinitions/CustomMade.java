@@ -20,7 +20,7 @@ public class CustomMade {
 
     public CustomMade() {
         /*This inheritance class calls itself in order to use the browser and page set up across the whole test and deleting cookies first*/
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daniel\\Downloads\\SuitSupply\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "//Custom-made--TestingFramework/tree/master/chromedriver_win32");
         this.driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
