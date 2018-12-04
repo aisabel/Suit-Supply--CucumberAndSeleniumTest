@@ -5,8 +5,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,12 +15,15 @@ import java.util.concurrent.TimeUnit;
 public class CustomMade {
 
 
-    public static WebDriver driver;
+    public static HtmlUnitDriver driver;
 
     public CustomMade() {
         /*This inheritance class calls itself in order to use the browser and page set up across the whole test and deleting cookies first*/
-        System.setProperty("webdriver.chrome.driver", "//Custom-made--TestingFramework/tree/master/chromedriver_win32");
-        this.driver = new ChromeDriver();
+        /*In case chromedriver will be used, then below property should be enabled and the path should be replaced as the one in your local machine
+        Also HtmlUnitDriver should be replaced by ChromeDriver
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Daniel\\Downloads\\SuitSupply\\chromedriver_win32\\chromedriver.exe");*/
+
+        this.driver = new HtmlUnitDriver();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.get("https://eu.suitsupply.com/en/home");
@@ -40,19 +42,19 @@ public class CustomMade {
     public void customMadeButton() throws Throwable {
         driver.findElement(By.cssSelector("a[data-sel-menukey='designyourown']")).getText();
         driver.navigate().to("https://eu.suitsupply.com/on/demandware.store/Sites-INT-Site/en/Configurator-Show?type=suit");
-        driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
     }
 
     @And("^CustomMade menu is displayed$")
     public void customMadeMenu() throws Throwable {
         driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]")).getText();
-        driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
     }
 
     @And("^Fabric menu is also visible$")
     public void fabricMenu() throws Throwable {
-         driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/span[2]")).getText();
-        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+        // driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/span[2]")).getText();
+       driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 
     }
     @Then("^click color button$")
@@ -251,7 +253,7 @@ public class CustomMade {
                 driver.findElement(By.cssSelector("div[data-item-name='Selected']")).click();
                 break;
             default:
-                throw new IllegalArgumentException("Not possible to select waistcoat Type ");
+                throw new IllegalArgumentException("Not possible to select trousers additional  ");
         }
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
     }
@@ -263,8 +265,14 @@ public class CustomMade {
             case "Regular min 42":
                 driver.findElement(By.cssSelector("div[data-item-type='42']")).click();
                 break;
+            case "Long min 90":
+                driver.findElement(By.cssSelector("div[data-item-type='90']")).click();
+                break;
+            case "Short max 32":
+                driver.findElement(By.cssSelector("div[data-item-type='32']")).click();
+                break;
             default:
-                throw new IllegalArgumentException("Not possible to select waistcoat Type ");
+                throw new IllegalArgumentException("Not possible to select jacket Type ");
         }
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
     }
@@ -272,11 +280,12 @@ public class CustomMade {
     @Then("^select trousers size \"(.*)\"$")
     public void trousersSize(String trousersSize) throws Throwable {
         switch (trousersSize) {
-            case "118":
-                driver.findElement(By.cssSelector("div[data-item-type='118']")).click();
+            case "Long max 118":
+                driver.findElement(By.cssSelector("div[data-item-name='118']")).click();
                 break;
+
             default:
-                throw new IllegalArgumentException("Not possible to select waistcoat Type ");
+                throw new IllegalArgumentException("Not possible to select trousers Type ");
         }
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.quit();

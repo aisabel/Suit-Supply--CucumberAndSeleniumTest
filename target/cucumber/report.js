@@ -30,10 +30,6 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "Fabric menu is also visible",
-  "keyword": "And "
-});
-formatter.step({
   "name": "click color button",
   "keyword": "Then "
 });
@@ -166,16 +162,6 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Fabric menu is also visible",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CustomMade.fabricMenu()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
   "name": "click color button",
   "keyword": "Then "
 });
@@ -183,7 +169,8 @@ formatter.match({
   "location": "CustomMade.colorButton()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: Returned node (null) was not a DOM element\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.9.1\u0027, revision: \u002763f7b50\u0027, time: \u00272018-02-07T22:25:02.294Z\u0027\nSystem info: host: \u0027LEDANNY\u0027, ip: \u0027192.168.99.1\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_91\u0027\nDriver info: driver.version: HtmlUnitDriver\r\n\tat org.openqa.selenium.htmlunit.HtmlUnitDriver.findElementByCssSelector(HtmlUnitDriver.java:1267)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\r\n\tat org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:1988)\r\n\tat org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:1984)\r\n\tat org.openqa.selenium.htmlunit.HtmlUnitDriver.implicitlyWaitFor(HtmlUnitDriver.java:1624)\r\n\tat org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:1984)\r\n\tat org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:761)\r\n\tat stepDefinitions.CustomMade.colorButton(CustomMade.java:62)\r\n\tat ✽.click color button(src/test/java/featureFiles/SS_CM00 CustomMade.feature:14)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "select color type \"Black\"",
@@ -193,8 +180,7 @@ formatter.match({
   "location": "CustomMade.colorType(String)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotVisibleException: element not visible\n  (Session info: chrome\u003d70.0.3538.102)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.9.1\u0027, revision: \u002763f7b50\u0027, time: \u00272018-02-07T22:25:02.294Z\u0027\nSystem info: host: \u0027LEDANNY\u0027, ip: \u0027192.168.99.1\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_91\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\\Users\\Daniel\\AppData\\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}\nSession ID: c6179271e69676d1895a8414a2e35409\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat stepDefinitions.CustomMade.colorType(CustomMade.java:77)\r\n\tat ✽.select color type \"Black\"(src/test/java/featureFiles/SS_CM00 CustomMade.feature:15)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "click design button",

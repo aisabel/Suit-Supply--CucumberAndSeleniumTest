@@ -1,11 +1,4 @@
-
-addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-beta
-      
+     
 language: java
 jdk:
   - oraclejdk8
@@ -17,9 +10,6 @@ cache:
 before_cache:
   - rm -f $HOME/.m2/repository/io/cucumber
   
-before_install:
-  - # start your web application and listen on `localhost`
-  - google-chrome-stable --headless --no-sandbox
 
 install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
