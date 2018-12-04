@@ -54,7 +54,7 @@ public class CustomMade {
     @And("^Fabric menu is also visible$")
     public void fabricMenu() throws Throwable {
         // driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/span[2]")).getText();
-       driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+       //driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 
     }
     @Then("^click color button$")

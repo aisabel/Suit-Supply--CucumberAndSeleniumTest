@@ -10,7 +10,7 @@ Feature: CustomMade
     Given user is in homePage
     When navigate to Custom Made Suit
     And CustomMade menu is displayed
-    And Fabric menu is also visible
+  #   And Fabric menu is also visible
     Then click color button
     And select color type "<colorType>"
     Then click design button
