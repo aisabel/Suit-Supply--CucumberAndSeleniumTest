@@ -1,4 +1,4 @@
-# Custom-made--TestingFramework
+# Suit Supply-TestingFramework
 
 <h2>Business Requirement:</h2>
 <p align="justified">Design automated/manual testcases for any product type (Suit), as well as prepare atuomation test withing any suggestion to add/change on any custom made product type.</br>								
